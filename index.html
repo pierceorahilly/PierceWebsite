@@ -129,5 +129,36 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+<script>
+  // Ensure only one audio plays at a time
+  (function enforceSingleAudioPlayback() {
+    const players = Array.from(document.querySelectorAll('audio'));
+
+    // When one starts playing, pause all others
+    players.forEach((a) => {
+      a.addEventListener('play', () => {
+        players.forEach((b) => {
+          if (b !== a && !b.paused) b.pause();
+        });
+      });
+    });
+
+    // (Optional) If you dynamically add tracks later, observe and hook them up too
+    const mo = new MutationObserver(() => {
+      document.querySelectorAll('audio').forEach((el) => {
+        if (!players.includes(el)) {
+          players.push(el);
+          el.addEventListener('play', () => {
+            players.forEach((b) => {
+              if (b !== el && !b.paused) b.pause();
+            });
+          });
+        }
+      });
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+  })();
+</script>
+<audio controls preload="metadata"> … </audio>
 
 </html>
