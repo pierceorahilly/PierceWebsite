@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pierce O Rahilly — Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="pierce.css">
+</head>
+<body>
+  <button class="toggle-theme" aria-label="Toggle dark mode">🌗 Theme</button>
+
+  <div class="container">
+    <!-- HERO Section -->
+    <header class="hero">
+        <div>
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="https://spotify.com" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+            <a href="https://soundcloud.com" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+      
+          <!-- Your Name -->
+          <h1 class="title">Pierce O Rahilly</h1>
+          <p class="subtitle">Computer Science student & music producer • Driven by creativity and curiosity</p>
+          <!-- About Me Dropdown -->
+<details class="about-details">
+    <summary>
+      About Me <span class="chev" aria-hidden="true">▾</span>
+    </summary>
+    <div class="about-body">
+      <p>I’m Pierce, a Computer Science student with a strong interest in technology and music. I produce original tracks, create custom pieces, and DJ at events across Limerick City.</p>
+      <p>I enjoy combining creativity with technical skill, whether that’s building digital projects or shaping sound. Always curious, always learning.<br>
+      <strong>Check out my work below !</strong></p>
+      
+   
+  </div>
+          
+
+          <div class="hero-cta">
+            <a class="btn" href="#" target="_blank" rel="noreferrer">Resume</a>
+            <a class="btn secondary" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      
+        <div class="portrait-wrap">
+          <img class="portrait" src="me.webp" alt="Pierce in his music studio" loading="lazy" decoding="async" />
+        </div>
+      </header>
+      
+    <section id="projects">
+        <h2>Recent Projects</h2>
+        <p>A few things I’ve been building lately.</p>
+      
+        <div class="grid">
+          <!-- Project 1 -->
+          <article class="card">
+            <h3>Breathe</h3>
+            <img src="breathe.jpeg" alt="Breathe Project">
+            <audio controls>
+              <source src="audio/breathe.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </article>
+      
+          <!-- Project 2 -->
+          <article class="card">
+            <h3>All That I Know</h3>
+            <img src="all that i know.jpg" alt="All That I Know Project">
+            <audio controls>
+              <source src="audio/all-that-i-know.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </article>
+      
+          <!-- Project 3 -->
+          <article class="card">
+            <h3>Make Me</h3>
+            <img src="mm.jpg" alt="Make Me Project">
+            <audio controls>
+              <source src="audio/make-me.wav" type="audio/wav">
+              Your browser does not support the audio element.
+            </audio>
+          </article>
+        </div>
+      </section>
+      
+
+    <!-- Music Section -->
+    <section id="music">
+      <h2>Music</h2>
+      <p>Beats and textures. Links on <a href="#">SoundCloud</a> and <a href="#">Spotify</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Reach out: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>© <span id="year"></span> Pierce O Rahilly</footer>
+  </div>
+
+  <script>
+    // Dark Mode Toggle
+    document.querySelector('.toggle-theme').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('prefers-dark', document.documentElement.classList.contains('dark') ? '1' : '0');
+    });
+
+    // Initialize theme
+    (function initTheme(){
+      const saved = localStorage.getItem('prefers-dark');
+      if (saved === '1') document.documentElement.classList.add('dark');
+    })();
+
+    // Dynamic Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
