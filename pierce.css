@@ -13,6 +13,19 @@
   --container: 980px;
   --space: clamp(16px, 3vw, 28px);
 }
+/* pierce.css */
+.toggle-theme{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;      /* make it topmost */
+  touch-action: manipulation; /* improves tap responsiveness */
+}
+.portrait-wrap,
+.hero::before,
+.hero::after {
+  pointer-events: none;   /* they won’t block taps */
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
