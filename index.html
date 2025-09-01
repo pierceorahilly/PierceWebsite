@@ -1,133 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pierce O Rahilly — Portfolio</title>
+  <title>Pierce O Rahilly</title>
+  <link rel="icon" type="image/png" href="me.webp">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Fugaz+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
   <!-- CSS -->
   <link rel="stylesheet" href="pierce.css">
 </head>
 <body>
-  <button class="toggle-theme" aria-label="Toggle dark mode">🌗 Theme</button>
+  
 
   <div class="container">
-    <!-- HERO Section -->
+    <!-- HERO -->
     <header class="hero">
-        <div>
-          <!-- Social Icons -->
-          <div class="social-icons">
-            <a href="https://spotify.com" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
-            <a href="https://soundcloud.com" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          </div>
-      
-          <!-- Your Name -->
-          <h1 class="title">Pierce O Rahilly</h1>
-          <p class="subtitle">Computer Science student & music producer • Driven by creativity and curiosity</p>
-          <!-- About Me Dropdown -->
-<details class="about-details">
-    <summary>
-      About Me <span class="chev" aria-hidden="true">▾</span>
-    </summary>
-    <div class="about-body">
-      <p>I’m Pierce, a Computer Science student with a strong interest in technology and music. I produce original tracks, create custom pieces, and DJ at events across Limerick City.</p>
-      <p>I enjoy combining creativity with technical skill, whether that’s building digital projects or shaping sound. Always curious, always learning.<br>
-      <strong>Check out my work below !</strong></p>
-    </details>
-
-   
-  </div>
-          
-
-          <div class="hero-cta">
-            <a class="btn" href="#" target="_blank" rel="noreferrer">Resume</a>
-            <a class="btn secondary" href="#" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+      <!-- Left column -->
+      <div class="hero-text">
+        <div class="social-icons">
+          <a href="https://open.spotify.com/artist/1Vze0EkP9pcH6ZwRYiAPNo?si=ynMd7c_iRCWbjrWelKV94A" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+          <a href="https://soundcloud.com/pierce-orahilly" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+          <a href="https://www.instagram.com/o_rahillyy/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/pierce-o%E2%80%99rahilly-3b3539238/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
-      
-        <div class="portrait-wrap">
-          <img class="portrait" src="me.webp" alt="Pierce in his music studio" loading="lazy" decoding="async" />
+
+        <h1 class="title">Pierce O Rahilly</h1>
+        <p class="subtitle">Computer Science student & music producer • Driven by creativity and curiosity</p>
+
+        <details class="about-details" id="about">
+          <summary>
+            About Me <span class="chev" aria-hidden="true">▾</span>
+          </summary>
+          <div class="about-body">
+            <p>I’m Pierce, a Computer Science student with a strong interest in technology and music. I produce original tracks, create custom pieces, and DJ at events across Limerick City.</p>
+            <p>I enjoy combining creativity with technical skill, whether that’s building digital projects or shaping sound. Always curious, always learning.<br>
+            <strong>Check out my work below!</strong></p>
+          </div>
+        </details>
+
+        <div class="hero-cta">
+        
         </div>
-      </header>
-      
+      </div>
+
+      <!-- Right column -->
+      <div class="portrait-wrap">
+        <img class="portrait" src="me.webp" alt="Pierce in his music studio" loading="lazy" decoding="async" />
+      </div>
+    </header>
+
+    <!-- Projects -->
     <section id="projects">
-        <h2>Recent Projects</h2>
-        <p>A few things I’ve been building lately.</p>
-      
-        <div class="grid">
-          <!-- Project 1 -->
-          <article class="card">
-            <h3>Breathe</h3>
-            <img src="breathe.jpeg" alt="Breathe Project">
-            <audio controls>
-              <source src="breathe.wav" type="audio/wav">
-              Your browser does not support the audio element.
-            </audio>
-          </article>
-      
-          <!-- Project 2 -->
-          <article class="card">
-            <h3>All That I Know</h3>
-            <img src="ATIK.JPG" alt="All That I Know Project">
-            <audio controls>
-              <source src="ATIK.mp3" type="audio/mp3">
-              Your browser does not support the audio element.
-            </audio>
-          </article>
-      
-          <!-- Project 3 -->
-          <article class="card">
-            <h3>Make Me</h3>
-            <img src="mm.jpg" alt="Make Me Project">
-            <audio controls>
-              <source src="makeme.mp3" type="audio/mp3">
-              Your browser does not support the audio element.
-            </audio>
-          </article>
-        </div>
-      </section>
-      
+      <h2>Recent Projects</h2>
+      <p>A few things I’ve been building lately.</p>
 
-    <!-- Music Section -->
-    <section id="music">
-      <h2>Music</h2>
-      <p>Beats and textures. Links on <a href="#">SoundCloud</a> and <a href="#">Spotify</a>.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Breathe</h3>
+          <img src="breathe.jpeg" alt="Breathe Project">
+          <audio controls>
+            <source src="breathe.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+
+        <article class="card">
+          <h3>All That I Know</h3>
+          <img src="ATIK.JPG" alt="All That I Know Project">
+          <audio controls>
+            <source src="ATIK.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+
+        <article class="card">
+          <h3>Make Me</h3>
+          <img src="mm.jpg" alt="Make Me Project">
+          <audio controls>
+            <source src="makeme.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+      </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Media -->
+<section id="media">
+  <h2>Media</h2>
+  <p>Articles and features:</p>
+
+  <div class="grid media-grid">
+    <article class="card">
+      <img src="logo_small.png" alt="Hot Press Article">
+      <h3><a href="https://www.hotpress.com/music/hot-for-2022-irish-acts-pierce-orahilly-22891392" target="_blank" rel="noopener">Hot For 2022 Irish Acts: Pierce O'Rahilly
+      </a></h3>
+    </article>
+
+    <article class="card">
+      <img src="95.png" alt="Media Feature 2">
+      <h3><a href="https://shows.acast.com/live-95-limerick-today-podcasts/episodes/limericks-pierce-orahilly-releases-dance-track-breathe" target="_blank" rel="noopener">Limerick's Pierce O'Rahilly releases dance track Breathe</a></h3>
+    </article>
+
+    <article class="card">
+      <img src="local hero.jpg" alt="Media Feature 3">
+      <h3><a href="https://www.instagram.com/p/CV2c8i5IJEk/" target="_blank" rel="noopener">SPIN SW Local Hero Award</a></h3>
+    </article>
+  </div>
+</section>
+
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact</h2>
-      <p>Reach out: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>
+        Reach out: 
+        <a href="mailto:orahillypierce@gmail.com">orahillypierce@gmail.com</a>
+        <small>(for DJ or music enquiries)</small>
+      </p>
     </section>
+    
 
-    <!-- Footer -->
     <footer>© <span id="year"></span> Pierce O Rahilly</footer>
   </div>
 
   <script>
-    // Dark Mode Toggle
-    document.querySelector('.toggle-theme').addEventListener('click', () => {
-      document.documentElement.classList.toggle('dark');
-      localStorage.setItem('prefers-dark', document.documentElement.classList.contains('dark') ? '1' : '0');
-    });
+    // Theme toggle
 
-    // Initialize theme
-    (function initTheme(){
-      const saved = localStorage.getItem('prefers-dark');
-      if (saved === '1') document.documentElement.classList.add('dark');
-    })();
-
-    // Dynamic Year
+    // Year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
