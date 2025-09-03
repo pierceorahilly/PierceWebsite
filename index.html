@@ -132,6 +132,27 @@
     // Theme toggle
 
     // Year
+    
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    
+      // Only one audio plays at a time
+      (function () {
+        const players = Array.from(document.querySelectorAll('audio'));
+        players.forEach((player) => {
+          player.addEventListener('play', () => {
+            players.forEach((other) => {
+              if (other !== player) {
+                other.pause();
+                // If you also want the previous track to reset to the start, uncomment:
+                // other.currentTime = 0;
+              }
+            });
+          });
+        });
+      })();
+    
+    
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
