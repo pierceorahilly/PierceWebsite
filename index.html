@@ -1,159 +1,310 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pierce O Rahilly</title>
+  <title>Pierce O'Rahilly</title>
   <link rel="icon" type="image/png" href="me.webp">
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="pierce.css">
 </head>
 <body>
-  
 
-  <div class="container">
+  <nav class="nav">
+    <a href="#" class="nav-brand">Pierce O'Rahilly</a>
+    <div class="nav-links">
+      <a href="#dj">DJ Services</a>
+      <a href="#music">Original Music</a>
+      <a href="#softbox">Softbox</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
     <!-- HERO -->
-    <header class="hero">
-      <!-- Left column -->
-      <div class="hero-text">
-        <div class="social-icons">
+    <section class="hero">
+      <div class="hero-body">
+        <p class="hero-eyebrow">Based in Limerick, Ireland</p>
+        <h1 class="hero-name">Pierce O'Rahilly</h1>
+        <p class="hero-roles">DJ &nbsp;·&nbsp; Music Producer &nbsp;·&nbsp; Software Developer</p>
+        <p class="hero-bio">Pierce O'Rahilly is a DJ, music producer, and software developer based in Limerick city. He produces and releases original music with local artists, plays venues across Limerick and beyond, and runs Softbox — an Odoo implementation and software as a service company. He's currently studying Computer Science.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn">Get in Touch</a>
+          <a href="#dj" class="btn btn-ghost">View Work</a>
+        </div>
+        <div class="socials">
           <a href="https://open.spotify.com/artist/1Vze0EkP9pcH6ZwRYiAPNo?si=ynMd7c_iRCWbjrWelKV94A" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
           <a href="https://soundcloud.com/pierce-orahilly" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
           <a href="https://www.instagram.com/o_rahillyy/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/pierce-o%E2%80%99rahilly-3b3539238/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
+      </div>
+      <div class="hero-image">
+        <img src="me.webp" alt="Pierce O'Rahilly" loading="eager" />
+      </div>
+    </section>
 
-        <h1 class="title">Pierce O Rahilly</h1>
-        <p class="subtitle">Computer Science student & music producer • Driven by creativity and curiosity</p>
+    <!-- DJ SERVICES -->
+    <section id="dj" class="section">
+      <div class="section-intro">
+        <div>
 
-        <details class="about-details" id="about">
-          <summary>
-            About Me <span class="chev" aria-hidden="true">▾</span>
-          </summary>
-          <div class="about-body">
-            <p>I’m Pierce, a Computer Science student with a strong interest in technology and music. I produce original tracks, create custom pieces, and DJ at events across Limerick City.</p>
-            <p>I enjoy combining creativity with technical skill, whether that’s building digital projects or shaping sound. Always curious, always learning.<br>
-            <strong>Check out my work below!</strong></p>
-          </div>
-        </details>
+          <h2 class="section-title">DJ Services</h2>
+          <p class="section-sub">Available for clubs, private events, and festivals across Limerick and beyond.</p>
+        </div>
+        <a href="#contact" class="btn">Book a Set</a>
+      </div>
 
-        <div class="hero-cta">
-        
+      <div class="dj-types">
+        <span>Club Nights</span>
+        <span>Private Events</span>
+        <span>Festivals</span>
+        <span>Corporate</span>
+        <span>Weddings</span>
+      </div>
+
+      <div class="video-grid">
+        <div class="video-slot">
+          <video controls preload="metadata" playsinline>
+            <source src="Punches bar.MP4" type="video/mp4">
+          </video>
+          <p class="video-label">📍 Punches Bar, Patrickswell</p>
+        </div>
+        <div class="video-slot">
+          <video controls preload="metadata" playsinline>
+            <source src="garryowen rugby club.MP4" type="video/mp4">
+          </video>
+          <p class="video-label">📍 Garryowen Rugby Club, Limerick</p>
+        </div>
+        <div class="video-slot">
+          <video controls preload="metadata" playsinline>
+            <source src="Mollys.MP4" type="video/mp4">
+          </video>
+          <p class="video-label">📍 Molly's Nightclub</p>
+        </div>
+        <div class="video-slot">
+          <video controls preload="metadata" playsinline>
+            <source src="101 o connell street.MP4" type="video/mp4">
+          </video>
+          <p class="video-label">📍 101 O'Connell Street <span class="video-label-sub">(DJ & Saxophone)</span></p>
+        </div>
+        <div class="video-slot">
+          <video controls preload="metadata" playsinline>
+            <source src="setrights cratloe.MP4" type="video/mp4">
+          </video>
+          <p class="video-label">📍 Set Rights, Cratloe</p>
+        </div>
+        <div class="video-slot">
+          <video controls preload="metadata" playsinline muted>
+            <source src="dolans.MP4" type="video/mp4">
+          </video>
+          <p class="video-label">📍 Dolan's, Limerick</p>
         </div>
       </div>
+    </section>
 
-      <!-- Right column -->
-      <div class="portrait-wrap">
-        <img class="portrait" src="me.webp" alt="Pierce in his music studio" loading="lazy" decoding="async" />
+    <!-- ORIGINAL MUSIC -->
+    <section id="music" class="section">
+      <div class="section-intro">
+        <div>
+
+          <h2 class="section-title">Original Music</h2>
+          <p class="section-sub">Tracks produced and released independently.</p>
+        </div>
+        <a href="https://open.spotify.com/artist/1Vze0EkP9pcH6ZwRYiAPNo" target="_blank" class="btn btn-ghost">
+          <i class="fab fa-spotify"></i> View All Tracks on Spotify
+        </a>
       </div>
-    </header>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Recent Projects</h2>
-      <p>A few things I’ve been building lately.</p>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Breathe</h3>
-          <img src="breathe.jpeg" alt="Breathe Project">
-          <audio controls>
-            <source src="breathe.wav" type="audio/wav">
-            Your browser does not support the audio element.
-          </audio>
+      <div class="track-grid">
+        <article class="track-card">
+          <div class="spotify-embed" data-uri="spotify:track:4Rl1fk0rJ01il9WskHcqs9"></div>
         </article>
-
-        <article class="card">
-          <h3>All That I Know</h3>
-          <img src="ATIK.JPG" alt="All That I Know Project">
-          <audio controls>
-            <source src="ATIK.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
+        <article class="track-card">
+          <div class="spotify-embed" data-uri="spotify:track:7iWXt3gmN0On36CPFKSz0m"></div>
         </article>
-
-        <article class="card">
-          <h3>Make Me</h3>
-          <img src="mm.jpg" alt="Make Me Project">
-          <audio controls>
-            <source src="makeme.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
+        <article class="track-card">
+          <div class="spotify-embed" data-uri="spotify:track:0qz79afGfFvW0hIblsWTdt"></div>
         </article>
+        <article class="track-card">
+          <div class="spotify-embed" data-uri="spotify:track:78DnrlMs4eeCyIWEdPy0if"></div>
+        </article>
+      </div>
+
+      <div class="divider"></div>
+
+      <p class="subsection-title">Press &amp; Features</p>
+      <div class="press-grid">
+        <a href="https://www.hotpress.com/music/hot-for-2022-irish-acts-pierce-orahilly-22891392" target="_blank" rel="noopener" class="press-feature">
+          <div class="press-feature-header">
+            <img src="logo_small.png" alt="Hot Press" />
+            <div>
+              <p class="press-feature-title">Hot For 2022 Irish Acts</p>
+              <p class="press-feature-pub">Hot Press Magazine</p>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <blockquote class="press-feature-quote">
+            Aged just 17, the Limerick producer marked himself as a serious force to be reckoned with as part of Irish Music Month's 'A New Local Hero' initiative. Selected as Spin South West's top choice in the talent search, he impressed the judges with his latest release, 'Self Belief' — a collaboration with fellow rising star Sade Ahmed. His Soundcloud platform showcases the depth of his genre-blending approach.
+          </blockquote>
+        </a>
+        <a href="https://shows.acast.com/live-95-limerick-today-podcasts/episodes/limericks-pierce-orahilly-releases-dance-track-breathe" target="_blank" rel="noopener" class="press-feature">
+          <div class="press-feature-header">
+            <img src="95.png" alt="Live 95" />
+            <div>
+              <p class="press-feature-title">Limerick's Pierce O'Rahilly releases dance track Breathe</p>
+              <p class="press-feature-pub">Live 95 Limerick Today · Monday, February 24, 2025</p>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <blockquote class="press-feature-quote">
+            Limerick artist Pierce O'Rahilly talks with producer Anne Marie about his recent release, 'Breathe'.
+          </blockquote>
+        </a>
+        <a href="https://www.instagram.com/p/CV2c8i5IJEk/" target="_blank" rel="noopener" class="press-feature">
+          <div class="press-feature-header">
+            <img src="local hero.jpg" alt="SPIN South West" />
+            <div>
+              <p class="press-feature-title">SPIN South West Local Hero — Irish Music Month</p>
+              <p class="press-feature-pub">SPIN South West</p>
+            </div>
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </div>
+          <blockquote class="press-feature-quote">
+            Congrats to Pierce O'Rahilly who has been selected as SPIN South West's Local Hero for Irish Music Month. He now goes forward to the national judging panel &amp; could make it to the final 5 from Local Heroes picked by radio stations across the country.
+          </blockquote>
+        </a>
       </div>
     </section>
 
-    <!-- Media -->
-<section id="media">
-  <h2>Media</h2>
-  <p>Articles and features:</p>
+    <!-- SOFTBOX -->
+    <section id="softbox" class="section">
+      <div class="section-intro">
+        <div>
 
-  <div class="grid media-grid">
-    <article class="card">
-      <img src="logo_small.png" alt="Hot Press Article">
-      <h3><a href="https://www.hotpress.com/music/hot-for-2022-irish-acts-pierce-orahilly-22891392" target="_blank" rel="noopener">Hot For 2022 Irish Acts: Pierce O'Rahilly
-      </a></h3>
-    </article>
+          <a href="https://softbox.ie" target="_blank" rel="noopener" class="softbox-brand">
+            <div class="sb-mark">
+              <div class="sb-sq sb-sq--a"></div>
+              <div class="sb-sq sb-sq--b"></div>
+            </div>
+            <span class="sb-wordmark">Softbox</span>
+          </a>
+          <p class="section-sub">Odoo implementation &amp; bespoke SaaS products for modern businesses.</p>
+        </div>
+        <a href="https://softbox.ie" target="_blank" rel="noopener" class="btn">Visit Softbox</a>
+      </div>
 
-    <article class="card">
-      <img src="95.png" alt="Media Feature 2">
-      <h3><a href="https://shows.acast.com/live-95-limerick-today-podcasts/episodes/limericks-pierce-orahilly-releases-dance-track-breathe" target="_blank" rel="noopener">Limerick's Pierce O'Rahilly releases dance track Breathe</a></h3>
-    </article>
-
-    <article class="card">
-      <img src="local hero.jpg" alt="Media Feature 3">
-      <h3><a href="https://www.instagram.com/p/CV2c8i5IJEk/" target="_blank" rel="noopener">SPIN SW Local Hero Award</a></h3>
-    </article>
-  </div>
-</section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        Reach out: 
-        <a href="mailto:orahillypierce@gmail.com">orahillypierce@gmail.com</a>
-        <small>(for DJ or music enquiries)</small>
-      </p>
+      <div class="services">
+        <div class="service">
+          <p class="service-num">01</p>
+          <h4>Odoo Implementation</h4>
+          <p>End-to-end Odoo deployment, configuration, and customisation tailored to your business. From initial setup through to go-live.</p>
+        </div>
+        <div class="service">
+          <p class="service-num">02</p>
+          <h4>SaaS Products</h4>
+          <p>Building original software products from the ground up. Several products currently in active development.</p>
+        </div>
+        <div class="service">
+          <p class="service-num">03</p>
+          <h4>Support &amp; Training</h4>
+          <p>Ongoing maintenance, staff onboarding, and module customisation to keep your systems running smoothly after launch.</p>
+        </div>
+      </div>
     </section>
-    
 
-    <footer>© <span id="year"></span> Pierce O Rahilly</footer>
-  </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-rows">
+        <div class="contact-row">
+          <span class="contact-type">Music &amp; DJ Enquiries</span>
+          <div class="contact-details">
+            <a href="mailto:orahillypierce@gmail.com" class="contact-link">orahillypierce@gmail.com</a>
+            <a href="tel:+353833145451" class="contact-link contact-phone">083 314 5451</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-type">Software Enquiries</span>
+          <a href="mailto:pierceorahilly@softbox.ie" class="contact-link">pierceorahilly@softbox.ie</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-name">Pierce O'Rahilly</span>
+    <div class="socials">
+      <a href="https://open.spotify.com/artist/1Vze0EkP9pcH6ZwRYiAPNo?si=ynMd7c_iRCWbjrWelKV94A" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+      <a href="https://soundcloud.com/pierce-orahilly" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://www.instagram.com/o_rahillyy/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/pierce-o%E2%80%99rahilly-3b3539238/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <span class="footer-copy">© <span id="year"></span></span>
+  </footer>
 
   <script>
-    // Theme toggle
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Year
-    
-      // Year
-      document.getElementById('year').textContent = new Date().getFullYear();
-    
-      // Only one audio plays at a time
-      (function () {
-        const players = Array.from(document.querySelectorAll('audio'));
-        players.forEach((player) => {
-          player.addEventListener('play', () => {
-            players.forEach((other) => {
-              if (other !== player) {
-                other.pause();
-                // If you also want the previous track to reset to the start, uncomment:
-                // other.currentTime = 0;
-              }
-            });
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.querySelector('.nav').classList.toggle('nav-open');
+    });
+
+    (function () {
+      const players = Array.from(document.querySelectorAll('audio, video'));
+      players.forEach(p => p.addEventListener('play', () => {
+        players.forEach(o => { if (o !== p) o.pause(); });
+      }));
+    })();
+
+    // Thumbnail seek trick: show specific frame, reset to 0 on first play
+    const videoThumbs = [
+      { el: document.querySelectorAll('.video-slot video')[0], t: 5 },
+      { el: document.querySelectorAll('.video-slot video')[1], t: 4 },
+      { el: document.querySelectorAll('.video-slot video')[2], t: 6 },
+      { el: document.querySelectorAll('.video-slot video')[3], t: 2 },
+      { el: document.querySelectorAll('.video-slot video')[4], t: 1 },
+      { el: document.querySelectorAll('.video-slot video')[5], t: null },
+    ];
+    videoThumbs.forEach(({ el, t }) => {
+      if (!el) return;
+      if (t !== null) {
+        el.addEventListener('loadedmetadata', () => { el.currentTime = t; });
+        el.addEventListener('play', () => { el.currentTime = 0; }, { once: true });
+      }
+    });
+  </script>
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+  <script>
+    window.onSpotifyIframeApiReady = (IFrameAPI) => {
+      const elements = document.querySelectorAll('.spotify-embed');
+      const controllers = [];
+      elements.forEach(el => {
+        IFrameAPI.createController(el, { uri: el.dataset.uri, height: 152 }, (controller) => {
+          controllers.push(controller);
+          const iframe = el.querySelector('iframe');
+          if (iframe) { iframe.style.width = '100%'; iframe.style.minWidth = '0'; }
+          controller.addListener('playback_update', (e) => {
+            if (!e.data.isPaused) {
+              controllers.forEach(c => { if (c !== controller) c.pause(); });
+            }
           });
         });
-      })();
-    
-    
-    document.getElementById('year').textContent = new Date().getFullYear();
+      });
+    };
   </script>
+  <nav class="bottom-nav" aria-label="Social links">
+    <a href="https://www.instagram.com/o_rahillyy/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://open.spotify.com/artist/1Vze0EkP9pcH6ZwRYiAPNo?si=ynMd7c_iRCWbjrWelKV94A" target="_blank" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+    <a href="https://soundcloud.com/pierce-orahilly" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+    <a href="https://www.linkedin.com/in/pierce-o%E2%80%99rahilly-3b3539238/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </nav>
 </body>
 </html>
